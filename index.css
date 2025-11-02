@@ -1,0 +1,354 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+    background-color: rgb(238, 213, 159);
+}
+
+a{
+    font-size: 1.25em;
+
+}
+
+h1{ 
+    font-size: 3.5em;
+}
+
+h2{
+    font-size: 2.7em;
+}
+
+h3{
+    font-size: 2em;
+}
+
+h4{
+    font-size: 4mm;
+}
+
+h5{
+    font-size: 1.5em;
+    font-family: cursive;
+}
+h6{
+    font-size: 2em;
+}
+h7{
+    font-size: 4em;
+    font-weight: bold;
+}
+
+p{
+    font-size: 1.25em;
+}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 2px solid rgba(105, 73, 24, 0.5);
+    box-shadow: 2px 2px 18px rgba(0, 0, 0, 0.5);
+    color: rgb(44, 32, 5);
+    background-color: rgb(255, 153, 0);
+}
+
+button:hover{
+    background-color: rgb(146, 88, 0);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{ color: rgba(102, 76, 20, 0.863);}
+
+header{
+    background-color: rgba(255, 170, 0, 0.575);
+}
+
+header .logo{
+    background-image: url(Media/Logo.png);
+        background-size: cover;
+        background-position: center center;
+        height: 100px;
+        width: 100px;
+    margin:0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    font-size: 1.45em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(129, 99, 55);
+}
+
+header a:hover{
+    color: rgb(190, 130, 39);
+}
+
+#titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("Media/Ventadecafe.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#titulo h1{
+    color: white;
+}
+
+#titulo button{
+    font-size: 1.75em
+}
+
+#Somos-cafetería-Luis .container{
+    text-align: justify;
+    padding: 200px 12px;
+}
+#nuestros-productos{
+    background-color: rgba(255, 170, 0, 0.575);
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+#nuestros-productos .container{
+    padding: 100px 10px;
+}
+
+#nuestros-productos h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#nuestros-productos p{
+    display: none;
+}
+
+#nuestros-productos .carta{
+    background-position: center center;
+    background-size: covers;
+}
+
+.carta:first-child{
+    border-radius: 15px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("Media/Cafe-americano.webp");
+    padding: 70px;
+    margin: 20px;
+}
+.carta:nth-child(2){
+    border-radius: 15px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("Media/cafecapu.jpg");
+    padding: 70px;
+    margin: 20px;
+}
+
+.carta:nth-child(3){
+    border-radius: 15px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("Media/cafe-latte.jpg");
+    padding: 70px;
+    margin: 20px;
+}
+
+#contactos .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#contactos li{
+    margin: 15px 0px;
+    font-weight: bold;
+
+}
+
+#Gracias{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 80vh;
+    background-color: rgba(255, 170, 0, 0.575) ;
+    color: rgb(88, 71, 12);
+}
+
+#Gracias button{
+    font-size: 1.75em
+}
+
+#Gracias h2{
+    font-size: 9vw;
+}
+
+footer{
+    background-color: bisque;
+}
+
+footer .container{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+footer p{
+    margin: 0;
+    color: rgb(88, 71, 12);
+}
+
+@media (min-width:690px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row-reverse;
+        padding-bottom: 0px 0px;
+        padding-right: 25px;
+    }
+
+    #Somos-cafetería-Luis .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #Somos-cafetería-Luis .texto{
+        width: 50%;
+        text-align: initial;
+        padding-left: 30px;
+        max-width: 600px;
+        flex-direction: column;
+        justify-content: center;
+        display: flex;
+
+    }
+
+    #Somos-cafetería-Luis p{
+        text-align: justify;
+    }
+
+    #Somos-cafetería-Luis h2{
+        margin-top: 0px;
+    }
+
+    #Somos-cafetería-Luis .img-container{
+        background-image: url(Media/Localdeventa.jpg);
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+        border-radius: 15px;
+        border-color: black;
+    }
+
+    #nuestros-productos .Productos{
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestros-productos p{
+        display: block;
+        text-align: justify;
+    }
+
+    #nuestros-productos h3{
+        margin-top: 0;
+    }
+
+    #nuestros-productos .carta{
+        padding: 15px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgba(165, 121, 26, 0.863);
+        box-shadow: 2px 2px 10px rgb(58, 38, 1);
+    }
+
+    .carta:first-child{
+    border-radius: 15px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("Media/Cafe-americano.webp");
+    padding: 70px;
+    margin: 20px;
+}
+.carta:nth-child(2){
+    border-radius: 15px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("Media/cafecapu.jpg");
+    padding: 70px;
+    margin: 20px;
+}
+
+.carta:nth-child(3){
+    border-radius: 15px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("Media/cafe-latte.jpg");
+    padding: 70px;
+    margin: 20px;
+}
+
+}
